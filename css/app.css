@@ -32,3 +32,26 @@ h1.with-background.black {
 body.with-background.black{
     background-color:rgba(0, 0, 0, 0.1);
 }
+.modal-header {
+  position: relative;
+  z-index: 5;
+  padding: 20px;
+  color: white;
+  font-size: 40px;
+  font-family: 'Nunito', sans-serif;
+}
+.modal-header::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../images/movies.jpg');
+    opacity: .4;
+}
+.modal-footer {
+    background: url('../images/moviesLower.jpg');
+    opacity: .4;
+}
